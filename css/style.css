@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+
+}
+body{
+	background-image: url(../img/lv.png);
+  background-repeat: repeat;
+  color: #222;
+}
+
+hr{
+ border: .5px solid #4db6ac;
+}
+
+
+blockquote{
+  border-left: 5px solid #4db6ac;
+}
+
+nav .brand-logo{
+	padding-left: 30px;
+	font-weight: 500;
+}
+.parallax-container{
+  text-align: center;
+ 
+  padding-top: 150px;
+}
+.parallax-container h1{
+  font-weight: 800;
+  color: rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+
+#blogimg{
+  padding-top: 10px;
+}
+
+#header-img{
+	width: 100vw;
+	height: 350px;
+	object-fit: cover;
+}
+#header-overlay{
+	position: absolute;
+	width: 100vw;
+  height: 350px;
+  background-color: #222;
+	background-image: url(../img/lv.png);
+	background-repeat: repeat;
+	opacity: .7;
+}
+
+
+.header-text-img{
+	position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:50px;
+    font-size: 60px;
+    font-weight:700;
+    text-transform: uppercase;
+     color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+#sidebars h6{
+	text-transform: uppercase;
+	padding-top: 20px;
+  font-weight: 700;
+}
+#sidebars{
+  background-color: #fff;
+
+  
+}
+
+.tags{
+  width: 150px;
+  padding: 15px;
+  text-align: center;
+  
+
+}
+.links{
+  
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  
+}
+.links a{
+  color: #fff;
+  z-index: 999;
+}
+.back-forth{
+  margin-top: 50px;
+}
+.tags a, p{
+  color: #222;
+}
+
+#profile{
+  border-left: 7px solid #999;
+  border-bottom: .3px solid #999;
+  margin: 10px;
+  padding: 20px;
+}
+.profile-img img{
+  object-fit: cover;
+  border: 7px solid #999;
+  border-radius: 50%;
+}
+
+.profile-text li{
+  display: inline;
+  float: right;
+}
+.card .card-content p{
+ /* text-overflow: ellipsis;
+ overflow: hidden; */
+ height:75px;
+ color: #222;
+ 
+}
+.card{
+  /* background-color: #222; */
+  background-image: url(../img/lv.png);
+  background-repeat: repeat;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
+  color: #fff;
+}
+.card .card-image{
+  height:230px;
+}
+.card .card-image img{
+  object-fit: cover;
+}
+.box {
+  position:relative;
+  margin: 5px;
+  color: #999;
+  display: inline-block;
+  transition: .5s ease;
+  border: 2px solid #999;
+  -webkit-transition:.5s ease;
+}
+
+.box:hover {
+  border: 2px solid rgba(0,160,80,0);
+  color: #222;
+}
+
+.box::before, .box::after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: .5s;
+}
+
+.foo::before {
+  border-bottom: 2px solid #4db6ac;
+  border-left: 2px solid #4db6ac;
+  -webkit-transform-origin: 0 100%;
+}
+
+.foo::after {
+  border-top: 2px solid #4db6ac;
+  border-right: 2px solid #4db6ac;
+  -webkit-transform-origin: 100% 0%;
+}
+.box:hover::after, .box:hover::before {
+  -webkit-transform: scale(1);
+}
+
+#wrapper-blog{
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #fff;
+  color: #222;
+  padding: 20px;
+  border-left: 5px solid #4db6ac;
+}
+.border-r{
+  border-right: .5px solid #4db6ac;
+}
+
+
+.pagination li a{
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 5px;
+  background-color: #4db6ac;
+  padding: 5px;
+  border-radius: 50%;
+}
+#pagination{
+  margin-top: 30px;
+}
+
