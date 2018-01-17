@@ -54,7 +54,7 @@ nav .brand-logo{
 	width: 100vw;
   height: 350px;
   background-color: #222;
-	background-image: url(../img/cl.png);
+	background-image: url(../img/tn.png);
 	background-repeat: repeat;
 	opacity: .7;
 }
@@ -94,6 +94,12 @@ nav .brand-logo{
   text-align: center;
   
 
+}
+.cats{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
 }
 .links{
   
@@ -156,7 +162,7 @@ nav .brand-logo{
   margin: 5px;
   color: #999;
   display: inline-block;
-  transition: .5s ease;
+  transition: 2s ease;
   border: 2px solid #999;
   -webkit-transition:.5s ease;
 }
@@ -176,7 +182,7 @@ nav .brand-logo{
   left:0;
   box-sizing: border-box;
   -webkit-transform: scale(0);
-  transition: .5s;
+  transition: 2s;
 }
 
 .foo::before {

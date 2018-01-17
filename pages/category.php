@@ -11,34 +11,19 @@ include '../includes/speedblog.php';
      <div class="col l9 s12" id="blogimg">
       <h5>Categorieën</h5>
 
-
-
-      <?php
- 			for($i = 1; $i<count($category); $i++){
- 			?>
-
-
-
-         <div class="col l6 m12 s12">
-           <div class="card">
-             <div class="card-image">
-               <img src="../<?php echo $image[$i]; ?>"  onerror="this.src='../img/1.jpg'" width="100%" height="100%">
-               <span class="card-title"><?php echo $category[$i]; ?></span>
-             </div>
-             <div class="card-content">
-               <p><?  custom_echo($body[$i], ""); ?></p>
-             </div>
-             <div class="card-action light-blue darken-1">
-               <a href="blog.php?blogid=<?php echo $blogid[$i]; ?>">Lees verder</a>
-             </div>
-           </div>
-         </div>
+      <a href=""><div class="cats box foo">PHP</div></a>
+      <a href=""><div class="cats box foo">Javascript</div></a>
+      <a href=""><div class="cats box foo">Html</div></a>
+      <a href=""><div class="cats box foo">Css</div></a>
+      <a href=""><div class="cats box foo">Jquery</div></a>
+      <a href=""><div class="cats box foo">MySQL</div></a>
+      <a href=""><div class="cats box foo">Python</div></a>
+      <a href=""><div class="cats box foo">Ruby</div></a>
 
 
 
- 			<?php
- 			}
- 			?>
+
+      
 </div>
        <?php
        include_once('../includes/sidebar.php');

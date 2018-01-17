@@ -22,7 +22,7 @@ while($row = mysqli_fetch_assoc($rows))
   <div class="centered"><?php echo $row["title"]; ?></div>
 </div>
 
- <div class="container" id="wrapper-blog">
+ <div class="container z-depth-1" id="wrapper-blog">
     <div class="row">
       <div class="col l9 s12" id="blogimg">
         <h3><?php echo $row["title"]; ?></h3>
