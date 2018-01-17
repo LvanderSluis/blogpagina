@@ -51,15 +51,15 @@ while($row = mysqli_fetch_array($result))
 
 
 
- $select_cat =  "SELECT DISTINCT blog_category FROM blog_articles";
- $result = mysqli_query($conn,$select_cat);
- // var_dump($result);
- // exit();
- $category[]=array();
- while($row = mysqli_fetch_array($result))
- {
-  $category[]=$row[8];
- }
+ // $select_cat =  "SELECT DISTINCT blog_category FROM blog_articles";
+ // $result = mysqli_query($conn,$select_cat);
+ // // var_dump($result);
+ // // exit();
+ // $category[]=array();
+ // while($row = mysqli_fetch_array($result))
+ // {
+ //  $category[]=$row[8];
+ // }
 
 
 
