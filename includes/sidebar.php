@@ -43,11 +43,11 @@
 	$row['blog_category'];
 
 	?>
-
+<a href="bloggies.php?cat=<?php echo $row['blog_category']; ?>">
 		 <div class="tags box foo">
-		 	<p><?php echo $row['blog_category']; ?></p>
+		 	<?php echo $row['blog_category']; ?>
 		 </div>
-
+</a>
 
 
 	 <?php

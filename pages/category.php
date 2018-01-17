@@ -11,15 +11,25 @@ include '../includes/speedblog.php';
      <div class="col l9 s12" id="blogimg">
       <h5>Categorieën</h5>
 
-      <a href=""><div class="cats box foo">PHP</div></a>
-      <a href=""><div class="cats box foo">Javascript</div></a>
-      <a href=""><div class="cats box foo">Html</div></a>
-      <a href=""><div class="cats box foo">Css</div></a>
-      <a href=""><div class="cats box foo">Jquery</div></a>
-      <a href=""><div class="cats box foo">MySQL</div></a>
-      <a href=""><div class="cats box foo">Python</div></a>
-      <a href=""><div class="cats box foo">Ruby</div></a>
+      <?php
 
+    
+      
+      $query = "SELECT DISTINCT blog_category FROM blog_articles WHERE blog_category <> '' ";
+      $result = mysqli_query($conn, $query);
+
+
+      while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
+
+      $row['blog_category'];
+
+      ?>
+
+      <a href="bloggies.php?cat=<?php echo $row['blog_category']; ?> "><div class="cats box foo"><?php echo $row['blog_category']; ?></div></a>
+      
+      <?php
+ 			}
+      ?>
 
 
 

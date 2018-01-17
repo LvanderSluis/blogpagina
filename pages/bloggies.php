@@ -5,6 +5,23 @@ include '../includes/speedblog.php';
 // $r = $_SESSION['ryanid'];
 
 
+// isset($_GET["cat"]) ? $r = $_GET["cat"] : null;
+
+
+// $result = mysqli_query($conn, $query);
+
+// if(isset($_GET['cat']))
+
+// {
+//   $r = $_GET["cat"];
+//   $query = "SELECT * FROM blog_articles WHERE blog_category = '$r' ";
+//   // var_dump($query);
+//   // exit();
+// }
+// else{
+//   $select_results =  "SELECT * FROM blog_articles ORDER BY blogid DESC limit $offset, $page_result";
+// }
+
 ?>
 <div class="container" id="wrapper-blog">
    <div class="row">
@@ -14,7 +31,7 @@ include '../includes/speedblog.php';
 
 
       <?php
- 			for($i = 1; $i<count($blogid); $i++){
+ 			for($i = 1; $i<count($category); $i++){
  			?>
 
 
@@ -30,6 +47,7 @@ include '../includes/speedblog.php';
              </div>
              <div class="card-action light-blue darken-1 ">
                <a href="blog.php?blogid=<?php echo $blogid[$i]; ?>">Lees verder</a>
+               <sub><?php echo $category[$i]; ?></sub>
              </div>
            </div>
            
@@ -68,7 +86,7 @@ include '../includes/speedblog.php';
 
          </ul>
         </div>
-</div>
+      </div>
        <?php
        include_once('../includes/sidebar.php');
        ?>
