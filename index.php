@@ -105,7 +105,7 @@ include 'includes/speedblog.php';
 			<img src="img/2.jpg">
 		</div>
 		<h1>Hello world</h1>
-    <a href="#introduction" class="waves-effect waves-light teal lighten-2 btn-large">Lees meer...</a>
+    <a href="#introduction" class="waves-effect waves-light light-blue darken-1 btn-large">Lees meer...</a>
 	</div>
 	<div class="section">
 		<div class="row container section scrollspy" id="introduction" >
@@ -128,7 +128,7 @@ include 'includes/speedblog.php';
             <div class="card-content">
               <p><?  custom_echo($body[$i], ""); ?></p>
             </div>
-            <div class="card-action teal lighten-2">
+            <div class="card-action light-blue darken-1">
               <a href="pages/blog.php?blogid=<?php echo $blogid[$i]; ?>">Lees verder</a>
             </div>
           </div>
@@ -196,7 +196,7 @@ include 'includes/speedblog.php';
 				</div>
 			</div>
 		</div>
-		<div class="footer-copyright teal lighten-2">
+		<div class="footer-copyright light-blue darken-1">
 			<div class="container">© 2017 Copyright Text <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
 			</div>
 		</div>

@@ -28,7 +28,7 @@ include '../includes/speedblog.php';
              <div class="card-content">
                <p><?  custom_echo($body[$i], ""); ?></p>
              </div>
-             <div class="card-action teal lighten-2 ">
+             <div class="card-action light-blue darken-1 ">
                <a href="blog.php?blogid=<?php echo $blogid[$i]; ?>">Lees verder</a>
              </div>
            </div>

@@ -11,18 +11,18 @@ html{
 
 }
 body{
-	background-image: url(../img/lv.png);
+	background-image: url(../img/cl.png);
   background-repeat: repeat;
   color: #222;
 }
 
 hr{
- border: .5px solid #4db6ac;
+ border: .5px solid #039be5;
 }
 
 
 blockquote{
-  border-left: 5px solid #4db6ac;
+  border-left: 5px solid #039be5;
 }
 
 nav .brand-logo{
@@ -54,7 +54,7 @@ nav .brand-logo{
 	width: 100vw;
   height: 350px;
   background-color: #222;
-	background-image: url(../img/lv.png);
+	background-image: url(../img/cl.png);
 	background-repeat: repeat;
 	opacity: .7;
 }
@@ -138,7 +138,7 @@ nav .brand-logo{
 }
 .card{
   /* background-color: #222; */
-  background-image: url(../img/lv.png);
+  background-image: url(../img/cl.png);
   background-repeat: repeat;
 }
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
@@ -179,14 +179,14 @@ nav .brand-logo{
 }
 
 .foo::before {
-  border-bottom: 2px solid #4db6ac;
-  border-left: 2px solid #4db6ac;
+  border-bottom: 2px solid #039be5;
+  border-left: 2px solid #039be5;
   -webkit-transform-origin: 0 100%;
 }
 
 .foo::after {
-  border-top: 2px solid #4db6ac;
-  border-right: 2px solid #4db6ac;
+  border-top: 2px solid #039be5;
+  border-right: 2px solid #039be5;
   -webkit-transform-origin: 100% 0%;
 }
 .box:hover::after, .box:hover::before {
@@ -200,10 +200,10 @@ nav .brand-logo{
   background-color: #fff;
   color: #222;
   padding: 20px;
-  border-left: 5px solid #4db6ac;
+  border-left: 5px solid #039be5;
 }
 .border-r{
-  border-right: .5px solid #4db6ac;
+  border-right: .5px solid #039be5;
 }
 
 
@@ -213,7 +213,7 @@ nav .brand-logo{
   font-size: 14px;
   color: #fff;
   margin-right: 5px;
-  background-color: #4db6ac;
+  background-color: #039be5;
   padding: 5px;
   border-radius: 50%;
 }

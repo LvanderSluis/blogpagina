@@ -90,7 +90,7 @@ while($row = mysqli_fetch_assoc($rows))
 
   </div>
   </div>
-  <div class="footer-copyright teal lighten-2">
+  <div class="footer-copyright light-blue darken-1">
     <div class="container">© <? echo date("Y");?> Copyright Text <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
     </div>
   </div>
