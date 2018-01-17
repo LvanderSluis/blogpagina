@@ -36,9 +36,10 @@ $body[]=array();
 $image[]=array();
 $author[]=array();
 $category[] = array();
+
  while($row = mysqli_fetch_array($result))
  {
-  $blogid[] = $row[0];
+ $blogid[] = $row[0];
  $title[] = $row[2];
  $body[] = $row[3];
  $author[]= $row[4];
