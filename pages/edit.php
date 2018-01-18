@@ -100,6 +100,10 @@ $_SESSION["blogid"] = $r;
                       <?php echo $body[$i]; ?>
                     </textarea>
                   </div>
+                  <div class="form-group">
+                        <label for="exampleFormControlFile1">Uitgelichte afbeelding</label>
+                        <input type="file" name="image" accept="image/*">
+                    </div>
 
 
                   <input type="submit" class="btn btn-default" value="Publiceer">

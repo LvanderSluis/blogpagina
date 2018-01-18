@@ -29,7 +29,7 @@
 
 	<?php
 
-	$query = "SELECT DISTINCT blog_category FROM blog_articles WHERE blog_category <> '' ";
+	$query = "SELECT DISTINCT blog_category FROM blog_articles WHERE blog_category <> '' LIMIT 5";
 	$result = mysqli_query($conn, $query);
 
 
