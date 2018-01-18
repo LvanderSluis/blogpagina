@@ -44,20 +44,20 @@ include '../includes/speedblog.php';
            <div class="card ">
              <div class="card-image">
                <img src="../<?php echo $image[$i]; ?>"  onerror="this.src='../img/1.jpg'" width="100%" height="100%">
-               
+
              </div>
              <div class="card-content">
              <span class="card-title"><?php echo $title[$i]; ?></span>
                <p><?  custom_echo($body[$i], ""); ?></p>
                <sub><?php echo $category[$i]; ?></sub>
-              
+
              </div>
              <div class="card-action white ">
                <a href="blog.php?blogid=<?php echo $blogid[$i]; ?>">Lees verder &#8250; </a>
-               
+
              </div>
            </div>
-           
+
          </div>
 
 
@@ -85,7 +85,7 @@ include '../includes/speedblog.php';
           // echo "<li><a href = 'bloggies.php?catnr=".($_GET['dog'] + 1)." '> &#187; </a></li>";
           // }
 
-         
+
           if($_GET['pagenr'] > 1)
           {
           echo "<li><a href = 'bloggies.php?pagenr=".($_GET['pagenr'] - 1)." '> &#171; </a></li>";
@@ -103,21 +103,40 @@ include '../includes/speedblog.php';
 
            ?>
 
+           <?php
+
+
+           if($_GET['catnr'] > 1)
+           {
+           echo "<li><a href = 'bloggies.php?cat=".($_GET['cat'])."&catnr=".($_GET['catnr'] - 1)." '> &#171; </a></li>";
+           }
+           for($l = 1 ; $l <= ceil($num); $l++)
+           {
+            echo "<li><a href = 'bloggies.php?cat=".($_GET['cat'])."&catnr=$l '>". $l ."</a></li>";
+           }
+           if($_GET['catnr'] = 1)
+           {
+           echo "<li><a href = 'bloggies.php?cat=".($_GET['cat'])."&catnr=".($_GET['catnr'] + 1)." '> &#187; </a></li>";
+           }
+
+
+
+            ?>
 
 
          </ul>
         </div>
       </div>
-       
+
 
 
 
    </div>
 </div>
-  
-  
+
+
   <script>
-    
+
         window.sr = ScrollReveal();
         sr.reveal('.card', {
           duration: 1000,
@@ -126,7 +145,7 @@ include '../includes/speedblog.php';
           viewFactor: 0.2,
           scale: 0.7,
         });
-    
+
     </script>
 
 
