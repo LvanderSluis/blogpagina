@@ -13,7 +13,7 @@ include '../includes/speedblog.php';
 </div>
 <div class="container" >
    <div class="row">
-     <div class="col l10 s12" id="wrapper-blog">
+     <div class="col l12 s12" id="wrapper-blog">
 
       <?php
 
@@ -39,9 +39,7 @@ include '../includes/speedblog.php';
 </div>
       
 
-       <?php
-       include_once('../includes/sidebar.php');
-       ?>
+     
 
    </div>
 </div>

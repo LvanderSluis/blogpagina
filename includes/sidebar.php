@@ -5,10 +5,10 @@
 
 		 <?php
 
- $select_results_all =  "SELECT * FROM blog_articles ORDER BY blogid DESC LIMIT 3";
- $result = mysqli_query($conn,$select_results_all);
+		$select_results_all =  "SELECT * FROM blog_articles ORDER BY blogid DESC LIMIT 3";
+		$result = mysqli_query($conn,$select_results_all);
 
- while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
+		while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
 
 	 	$row['blogid'];
 		$row['title'];
@@ -20,7 +20,7 @@
 			  </div></a>
 
 
-			<?php
+		  <?php
 		  }
 		  ?>
 

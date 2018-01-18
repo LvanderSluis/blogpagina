@@ -258,3 +258,7 @@ sub {
   color: #777
   text-transform: uppercase;
 }
+.ftr {
+  padding: 5px;
+  
+}

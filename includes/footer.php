@@ -3,14 +3,51 @@
     <div class="row">
 
       <div class="col l3 s12">
-        <h5 class="white-text">Footer Content1</h5>
-        <p class="grey-text text-lighten-4">You can use rows and columns here
-          to organize your footer content.</p>
+        <h5 class="white-text">Recente Blogs</h5>
+        <?php
+
+              $select_results_all =  "SELECT * FROM blog_articles ORDER BY blogid DESC LIMIT 5";
+              $result = mysqli_query($conn,$select_results_all);
+
+              while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
+
+              $row['blogid'];
+              $row['title'];
+
+              ?>
+
+                <a href="../pages/blog.php?blogid=<?php echo $row['blogid']; ?>"><div class="ftr box foo">
+                    <?php echo $row['title']; ?>
+                </div></a>
+
+
+              <?php
+              }
+              ?>
       </div>
       <div class="col l3 s12">
-        <h5 class="white-text">Meest recent</h5>
-        <p class="grey-text text-lighten-4">You can use rows and columns here
-          to organize your footer content.</p>
+        <h5 class="white-text">Categorieën</h5>
+        <?php
+
+            $query = "SELECT DISTINCT blog_category FROM blog_articles WHERE blog_category <> '' ";
+            $result = mysqli_query($conn, $query);
+
+
+            while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
+
+            $row['blog_category'];
+
+            ?>
+          <a href="bloggies.php?cat=<?php echo $row['blog_category']; ?>">
+              <div class="ftr box foo">
+                <?php echo $row['blog_category']; ?>
+              </div>
+          </a>
+
+
+        <?php
+        }
+        ?>
       </div>
       <div class="col l3 s12">
          <h6>Tags</h6>
