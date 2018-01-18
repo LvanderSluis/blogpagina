@@ -112,6 +112,9 @@ include '../includes/sessions.php';
                           <option>SQL</option>
                           <option>JQuery</option>
                           <option>Ruby</option>
+                          <option>React JS</option>
+                          <option>C++</option>
+                          <option>Java</option>
                         </select>
                       </div>
                   </div>

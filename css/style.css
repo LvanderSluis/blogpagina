@@ -170,13 +170,14 @@ nav .brand-logo{
   display: inline-block;
   transition: 2s ease;
   border: 2px solid #999;
-  -webkit-transition:1s ease;
+  -webkit-transition:2s ease;
 }
 
 .box:hover {
   border: 2px solid rgba(0,160,80,0);
   color: #fff;
-  background-color: #212121;
+  background-image: url(../img/tn.png);
+  background-repeat: repeat;
 }
 
 .box::before, .box::after {
@@ -189,7 +190,7 @@ nav .brand-logo{
   left:0;
   box-sizing: border-box;
   -webkit-transform: scale(0);
-  transition: 1s;
+  transition: 1.1s;
 }
 
 .foo::before {
@@ -222,8 +223,8 @@ nav .brand-logo{
   font-weight: 700;
 }
 .blog-content h6{
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
   color: #999;
   text-transform: uppercase;
 }
@@ -261,4 +262,17 @@ sub {
 .ftr {
   padding: 5px;
   
+}
+.ftr-links li{
+  text-transform: uppercase;
+  border-bottom: .3px solid #777;
+  padding-bottom: 5px;
+}
+.page-footer h5{
+  font-weight: 600;
+  font-size: 20px;
+}
+.page-footer{
+  background-image: url(../img/tn.png);
+  background-repeat: repeat;
 }

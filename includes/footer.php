@@ -54,16 +54,16 @@
 
            
       </div>
-      <div class="col l3  s12">
-        <h5 class="white-text">Links</h5>
+      <div class="col l3  s12 ftr-links">
+        <h5 class="white-text">Menu</h5>
         <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 1</a>
+          <li><a class="grey-text text-lighten-3" href="#!">HOME</a>
           </li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 2</a>
+          <li><a class="grey-text text-lighten-3" href="#!">BLOGS</a>
           </li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 3</a>
+          <li><a class="grey-text text-lighten-3" href="#!">Categorieën</a>
           </li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 4</a>
+          <li><a class="grey-text text-lighten-3" href="#!">LOGIN</a>
           </li>
         </ul>
       </div>
