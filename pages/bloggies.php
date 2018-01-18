@@ -23,10 +23,14 @@ include '../includes/speedblog.php';
 // }
 
 ?>
+<div class="header-text-img">
+  <div id="header-overlay" ></div>
+  <img class="responsive-img " id="header-img" src="../<?php echo $row["afbeelding"]; ?>" onerror="this.src='../img/1.jpg'">
+  <div class="centered">Blogs</div>
+</div>
 <div class="container" id="wrapper-blog">
    <div class="row">
-     <div class="col l9 s12" id="blogimg">
-      <h5>Blogpagina</h5>
+     <div class="col l12 s12" id="blogimg">
 
 
 
@@ -40,14 +44,17 @@ include '../includes/speedblog.php';
            <div class="card ">
              <div class="card-image">
                <img src="../<?php echo $image[$i]; ?>"  onerror="this.src='../img/1.jpg'" width="100%" height="100%">
-               <span class="card-title"><?php echo $title[$i]; ?></span>
+               
              </div>
              <div class="card-content">
+             <span class="card-title"><?php echo $title[$i]; ?></span>
                <p><?  custom_echo($body[$i], ""); ?></p>
-             </div>
-             <div class="card-action light-blue darken-1 ">
-               <a href="blog.php?blogid=<?php echo $blogid[$i]; ?>">Lees verder</a>
                <sub><?php echo $category[$i]; ?></sub>
+              
+             </div>
+             <div class="card-action white ">
+               <a href="blog.php?blogid=<?php echo $blogid[$i]; ?>">Lees verder &#8250; </a>
+               
              </div>
            </div>
            
@@ -65,6 +72,20 @@ include '../includes/speedblog.php';
           <?php
 
 
+          // if($_GET['dog'] > 1)
+          // {
+          // echo "<li><a href = 'bloggies.php?catnr=".($_GET['dog'] - 1)." '> &#171; </a></li>";
+          // }
+          // for($l = 1 ; $l <= ceil($num); $l++)
+          // {
+          // echo "<li><a href = 'bloggies.php?catnr=$l '>". $l ."</a></li>";
+          // }
+          // if($_GET['dog'] = 1)
+          // {
+          // echo "<li><a href = 'bloggies.php?catnr=".($_GET['dog'] + 1)." '> &#187; </a></li>";
+          // }
+
+         
           if($_GET['pagenr'] > 1)
           {
           echo "<li><a href = 'bloggies.php?pagenr=".($_GET['pagenr'] - 1)." '> &#171; </a></li>";
@@ -87,9 +108,7 @@ include '../includes/speedblog.php';
          </ul>
         </div>
       </div>
-       <?php
-       include_once('../includes/sidebar.php');
-       ?>
+       
 
 
 
@@ -101,10 +120,11 @@ include '../includes/speedblog.php';
     
         window.sr = ScrollReveal();
         sr.reveal('.card', {
-          duration: 500,
-          origin:'left',
-          distance:'30px',
+          duration: 1000,
+          origin:'top',
+          // distance:'100px',
           viewFactor: 0.2,
+          scale: 0.7,
         });
     
     </script>

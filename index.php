@@ -27,9 +27,9 @@ include 'includes/speedblog.php';
 			<div class="nav-wrapper grey darken-4"> <a href="#!" class="brand-logo">CEEMES ? CEEMES : ZEEMES ;</a>
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
-					<li><a href="pages/bloggies.php">Blog</a>
+					<li><a href="pages/bloggies.php">Blogs</a>
 					</li>
-					<li><a href="pages/category.php">Category</a>
+					<li><a href="pages/category.php">Categorieën</a>
 					</li>
 
 					<?php if(isset($_SESSION['name'])){ ?>
@@ -43,9 +43,9 @@ include 'includes/speedblog.php';
 					 <li><a href="pages/posts.php"><i class="material-icons">account_circle</i></a></li>
 				</ul>
 				<ul class="side-nav" id="mobile-demo">
-					<li><a href="pages/blog.php">Blog</a>
+					<li><a href="pages/blog.php">Blogs</a>
 					</li>
-					<li><a href="pages/category.php">Category</a>
+					<li><a href="pages/category.php">Categorieën</a>
 					</li>
 
 					<li><a href="mobile.html">Mobile</a>
@@ -105,7 +105,7 @@ include 'includes/speedblog.php';
 			<img src="img/2.jpg">
 		</div>
 		<h1>Hello world</h1>
-    <a href="#introduction" class="waves-effect waves-light light-blue darken-1 btn-large">Lees meer...</a>
+    <a href="#introduction" class="waves-effect waves-light yellow accent-4 btn-large">Lees meer...</a>
 	</div>
 	<div class="section">
 		<div class="row container section scrollspy" id="introduction" >
@@ -128,7 +128,7 @@ include 'includes/speedblog.php';
             <div class="card-content">
               <p><?  custom_echo($body[$i], ""); ?></p>
             </div>
-            <div class="card-action light-blue darken-1">
+            <div class="card-action white">
               <a href="pages/blog.php?blogid=<?php echo $blogid[$i]; ?>">Lees verder</a>
             </div>
           </div>
@@ -196,7 +196,7 @@ include 'includes/speedblog.php';
 				</div>
 			</div>
 		</div>
-		<div class="footer-copyright light-blue darken-1">
+		<div class="footer-copyright grey darken-4">
 			<div class="container">© 2017 Copyright Text <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
 			</div>
 		</div>

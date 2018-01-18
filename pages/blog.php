@@ -22,13 +22,23 @@ while($row = mysqli_fetch_assoc($rows))
   <div class="centered"><?php echo $row["title"]; ?></div>
 </div>
 
- <div class="container z-depth-1" id="wrapper-blog">
+ <div class="container">
     <div class="row">
-      <div class="col l9 s12" id="blogimg">
+      <div class="col l10 s12" >
+      
+      <div class="blog-content" id="wrapper-blogs">
+      <img class="responsive-img" id="blog-img" src="../<?php echo $row["afbeelding"]; ?>" onerror="this.src='../img/1.jpg'">
+      
+
+
+        <?php $originaldate = $row["date"];
+              $newdate = date("d M Y", strtotime($originaldate)); 
+        ?>
+
+        <h6><?php echo $newdate; ?>, <?php echo $row["author"]; ?></h6>
         <h3><?php echo $row["title"]; ?></h3>
-        <hr></hr><br />
-        <p>Geschreven door: <?php echo $row["author"]; ?></p><br>
-        <p>Gepubliceerd op: <?php echo $row["date"]; ?></p><br>
+        
+        
         <p>Categorie: <?php echo $row["blog_category"]; ?></p><br>
         <p><?php echo $row["body"]; ?></p>
 
@@ -38,21 +48,25 @@ while($row = mysqli_fetch_assoc($rows))
 
           echo $linkb; ?>">
 
-          <button class="links box foo">Vorige blog</button></a>
+          <button class="links box foo white">Vorige blog</button></a>
         
 
         <a href="blog.php?blogid=<?php 
           $linkf = $row["blogid"] + 1;
-          echo $linkf; ?>"><button class="links box foo"> Volgende blog</button></a>
+          echo $linkf; ?>"><button class="links box foo white"> Volgende blog</button></a>
+          </div>
       </div>
-      </div>
- 
-
+      
+ </div>
+      
+      
       <?php
       include_once('../includes/sidebar.php');
       ?>
+     
+ </div>
 </div>
-</div>
+
 
 
  <footer class="page-footer grey darken-4">
@@ -90,7 +104,7 @@ while($row = mysqli_fetch_assoc($rows))
 
   </div>
   </div>
-  <div class="footer-copyright light-blue darken-1">
+  <div class="footer-copyright grey darken-4">
     <div class="container">© <? echo date("Y");?> Copyright Text <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
     </div>
   </div>
@@ -115,17 +129,7 @@ while($row = mysqli_fetch_assoc($rows))
   });
   });
 </script>
-<script>
-    $( document ).ready(function() {
-        window.sr = ScrollReveal();
-        sr.reveal('.header-text-img', {
-          duration: 500,
-          origin: 'top',
-          distance: '2000px',
-          
-        });
-      });
-    </script>
+
 
 <!--Import jQuery before materialize.js-->
 

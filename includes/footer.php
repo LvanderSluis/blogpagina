@@ -33,7 +33,7 @@
 
   </div>
   </div>
-  <div class="footer-copyright light-blue darken-1">
+  <div class="footer-copyright grey darken-4">
     <div class="container">© <? echo date("Y");?> Copyright Text <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
     </div>
   </div>

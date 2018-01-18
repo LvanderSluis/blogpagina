@@ -35,9 +35,9 @@
 				  <li><a href="#!">update profile</a></li>
 				</ul>
         <ul class="right hide-on-med-and-down">
-          <li><a href="../pages/bloggies.php">Blog</a>
+          <li><a href="../pages/bloggies.php">Blogs</a>
           </li>
-          <li><a href="category.php">Category</a>
+          <li><a href="category.php">Categorieën</a>
           </li>
 
           <li><a class="modal-trigger" href="#modal1">Inloggen</a>
@@ -47,7 +47,7 @@
         <ul class="side-nav " id="mobile-demo">
           <li><a href="..pages/blog.php">Sass</a>
           </li>
-          <li><a href="category.php">Category</a>
+          <li><a href="category.php">Categorieën</a>
           </li>
           <li><a href="collapsible.html">Javascript</a>
           </li>

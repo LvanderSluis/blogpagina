@@ -5,28 +5,29 @@ include 'dbh.inc.php';
 $offset = 0;
 $page_result = 6;
 
-if($_GET['pagenr'])
-{
- $page_value = $_GET['pagenr'];
- if($page_value > 1)
- {
-  $offset = ($page_value - 1) * $page_result;
- }
-}
+if(isset($_GET['cat']))
 
-$select_results_all =  "SELECT * FROM blog_articles";
+{
+
+  if($_GET['dog'])
+  {
+   $page_value = $_GET['dog'];
+   if($page_value > 1)
+   {
+    $offset = ($page_value - 1) * $page_result;
+   }
+  }
+
+
+$select_results_all =  "SELECT * FROM blog_articles WHERE blog_category = '$r'";
 $result = mysqli_query($conn,$select_results_all);
 $rows = mysqli_num_rows($result);
 $pagecount = $rows;
 $num = $pagecount / $page_result;
 
-
-if(isset($_GET['cat']))
-
-{
-  $r = $_GET["cat"];
-  $query = "SELECT * FROM blog_articles WHERE blog_category = '$r' ";
-  $result = mysqli_query($conn,$query);
+$r = $_GET["cat"];
+$query = "SELECT * FROM blog_articles WHERE blog_category = '$r' ORDER BY blogid DESC limit $offset, $page_result";
+$result = mysqli_query($conn,$query);
 //  var_dump($result);
 //  exit();
 $blogid[]=array();
@@ -54,6 +55,20 @@ $category[] = array();
 else
 
 {
+  if($_GET['pagenr'])
+{
+ $page_value = $_GET['pagenr'];
+ if($page_value > 1)
+ {
+  $offset = ($page_value - 1) * $page_result;
+ }
+}
+
+$select_results_all =  "SELECT * FROM blog_articles";
+$result = mysqli_query($conn,$select_results_all);
+$rows = mysqli_num_rows($result);
+$pagecount = $rows;
+$num = $pagecount / $page_result;
 $select_results =  "SELECT * FROM blog_articles ORDER BY blogid DESC limit $offset, $page_result";
 $result = mysqli_query($conn,$select_results);
 
@@ -85,15 +100,6 @@ while($row = mysqli_fetch_array($result))
 
 }
 
-//  $select_cat =  "SELECT DISTINCT blog_category FROM blog_articles";
-//  $result = mysqli_query($conn,$select_cat);
-// //  var_dump($result);
-// //  exit();
-//  $category[]=array();
-//  while($row = mysqli_fetch_array($result))
-//  {
-//   $category[]=$row[8];
-//  }
 
 
 

@@ -110,7 +110,7 @@ include '../includes/sessions.php';
                           <option>PHP</option>
                           <option>Python</option>
                           <option>SQL</option>
-                          <option>JQuey</option>
+                          <option>JQuery</option>
                           <option>Ruby</option>
                         </select>
                       </div>

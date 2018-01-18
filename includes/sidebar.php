@@ -1,11 +1,6 @@
-<div id="wrapper-side">
-<div class="col l3 s12" id="sidebars">
-	<h6>Zoek</h6>
-	<div class="input-field">
-		<form action="results.php">
-			<input type="text" name="q" id="tipue_search_input">
-		</form>
-        </div>
+<div class="row">
+<div class="col l2 s12" id="sidebars">
+	
         <h6>Recente Blogs</h6>
 
 		 <?php
@@ -53,6 +48,13 @@
 	 <?php
 	 }
 	 ?>
+	 <h6>Zoek</h6>
+	<div class="input-field grey-text text-darken-4">
+		<form action="results.php">
+			<input type="text" name="q" id="tipue_search_input">
+		</form>
+        </div>
 
    </div>
-</div>
+   </div>
+
