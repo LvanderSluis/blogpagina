@@ -57,15 +57,15 @@
       <div class="col l3  s12 ftr-links">
         <h5 class="white-text">Menu</h5>
         <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">HOME</a>
+          <li><a class="grey-text text-lighten-3" href="../index.php">HOME</a>
           </li>
-          <li><a class="grey-text text-lighten-3" href="#!">BLOGS</a>
+          <li><a class="grey-text text-lighten-3" href="bloggies.php">BLOGS</a>
           </li>
-          <li><a class="grey-text text-lighten-3" href="#!">Categorieën</a>
+          <li><a class="grey-text text-lighten-3" href="category.php">Categorieën</a>
           </li>
-          <li><a class="grey-text text-lighten-3" href="#!">LOGIN</a>
+          <li><a class="grey-text text-lighten-3 modal-trigger" href="#modal1">LOGIN</a>
           </li>
-        </ul>
+      </ul>
       </div>
 
   </div>
