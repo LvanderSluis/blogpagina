@@ -11,7 +11,7 @@ $page_result = 6;
   //////////////////////////////////////////
 
   $page_number = isset($_GET['pagenr']) ? $_GET['pagenr'] : 1;
-  $category_name = isset($_GET['cat']) ? $_GET['cat'] : null;
+  $category_name = isset($_GET['cat']) && $_GET['cat'] != ""  ? $_GET['cat'] : null;
 
   if(isset($category_name)) {
     $select_results_all =  "SELECT * FROM blog_articles WHERE blog_category = '$category_name'";
