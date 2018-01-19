@@ -163,11 +163,7 @@ nav .brand-logo{
 .card .card-content .card-title {
   font-weight: 700;
 }
-.card{
-  /* background-color: #222; */
-  /* background-image: url(../img/cl.png);
-  background-repeat: repeat; */
-}
+
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
   color:#ffd600;
   font-weight: 500;
@@ -195,6 +191,8 @@ nav .brand-logo{
   color: #fff;
   background-image: url(../img/tn.png);
   background-repeat: repeat;
+  transition: 2s ease;
+  -webkit-transition:2s ease;
 }
 
 .box::before, .box::after {
@@ -273,8 +271,10 @@ nav .brand-logo{
 
 sub {
  
-  color: #777
+  color: #777;
   text-transform: uppercase;
+  padding-top: 8px;
+  float: right;
 }
 .ftr {
   padding: 5px;

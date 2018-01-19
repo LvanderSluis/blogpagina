@@ -44,16 +44,19 @@ include '../includes/speedblog.php';
            <div class="card ">
              <div class="card-image">
                <img src="../<?php echo $image[$i]; ?>"  onerror="this.src='../img/1.jpg'" width="100%" height="100%">
+              
+
 
              </div>
              <div class="card-content">
              <span class="card-title"><?php echo $title[$i]; ?></span>
+               <p>by  <?  echo $author[$i]; ?></p>
                <p><?  custom_echo($body[$i], ""); ?></p>
-               <sub><?php echo $category[$i]; ?></sub>
-
+              
              </div>
              <div class="card-action white ">
-               <a href="blog.php?blogid=<?php echo $blogid[$i]; ?>">Lees verder &#8250; </a>
+               <a href="blog.php?blogid=<?php echo $blogid[$i]; ?>">Lees verder &#8250; </a>  
+               <sub><?php echo $category[$i]; ?></sub>
 
              </div>
            </div>
