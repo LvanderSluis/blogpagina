@@ -24,7 +24,7 @@ include 'includes/speedblog.php';
 <body>
 	<div class="navbar-fixed">
 		<nav>
-			<div class="nav-wrapper grey darken-4"> <a href="#!" class="brand-logo">CEEMES ? CEEMES : ZEEMES ;</a>
+			<div class="nav-wrapper grey darken-4"> <a href="#!" class="brand-logo">Streaker</a>
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="pages/bloggies.php">Blogs</a>
@@ -36,9 +36,9 @@ include 'includes/speedblog.php';
           <li>
 						<a href="includes/logout.php" style="text-decoration:none">Logout</a>
 					</li>
-<?php }else{ ?>
-		<li><a class="modal-trigger" href="#modal1">Inloggen</a>
-<?php } ?>
+            <?php }else{ ?>
+                <li><a class="modal-trigger" href="#modal1">Inloggen</a>
+            <?php } ?>
 					</li>
 					 <li><a href="pages/posts.php"><i class="material-icons">account_circle</i></a></li>
 				</ul>
@@ -180,7 +180,7 @@ include 'includes/speedblog.php';
 
               ?>
 
-                <a href="../pages/blog.php?blogid=<?php echo $row['blogid']; ?>"><div class="ftr box foo">
+                <a href="pages/blog.php?blogid=<?php echo $row['blogid']; ?>"><div class="ftr box foo">
                     <?php echo $row['title']; ?>
                 </div></a>
 
@@ -202,7 +202,7 @@ include 'includes/speedblog.php';
             $row['blog_category'];
 
             ?>
-          <a href="bloggies.php?cat=<?php echo $row['blog_category']; ?>">
+          <a href="pages/bloggies.php?cat=<?php echo $row['blog_category']; ?>">
               <div class="ftr box foo">
                 <?php echo $row['blog_category']; ?>
               </div>
@@ -223,11 +223,11 @@ include 'includes/speedblog.php';
         <ul>
           <li><a class="grey-text text-lighten-3" href="#!">HOME</a>
           </li>
-          <li><a class="grey-text text-lighten-3" href="#!">BLOGS</a>
+          <li><a class="grey-text text-lighten-3" href="pages/bloggies.php">BLOGS</a>
           </li>
-          <li><a class="grey-text text-lighten-3" href="#!">Categorieën</a>
+          <li><a class="grey-text text-lighten-3" href="pages/category.php">Categorieën</a>
           </li>
-          <li><a class="grey-text text-lighten-3" href="#!">LOGIN</a>
+          <li><a class="grey-text text-lighten-3 modal-trigger" href="#modal1">LOGIN</a>
           </li>
         </ul>
       </div>

@@ -26,7 +26,7 @@
 
   <div class="navbar-fixed">
     <nav>
-      <div class="nav-wrapper grey darken-4"> <a href="../index.php" class="brand-logo">: ) }- > C > - ^^^o~~~</a>
+      <div class="nav-wrapper grey darken-4"> <a href="../index.php" class="brand-logo">streaker</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul id="dropdown1" class="dropdown-content">
 				  <li><a href="../pages/posts.php">profiel</a></li>
