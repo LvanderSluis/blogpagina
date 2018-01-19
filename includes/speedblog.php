@@ -129,7 +129,7 @@ function custom_echo($i, $length)
   }
   else
   {
-        $s = substr(strip_tags($i), 0, 100);
+        $s = substr(strip_tags($i), 0, 120);
         $i = substr($s, 0, strrpos($s, ' ')) . " " . '...';
     echo $i;
   }

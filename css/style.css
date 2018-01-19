@@ -15,7 +15,9 @@ body{
 }
 
 hr{
- border: .5px solid #ffd600;
+  border-style: solid;
+ border-width: .3px;
+ color:#ffd600;
 }
 
 
@@ -33,7 +35,8 @@ nav .brand-logo{
   padding-top: 150px;
 }
 .parallax-container h1{
-  font-weight: 800;
+  font-weight: 700;
+  text-transform: uppercase;
   color: #fff;
 }
 
@@ -42,15 +45,32 @@ nav .brand-logo{
   height: 450px;
   width: 100%;
   object-fit: cover;
+  position: relative;
+  -webkit-filter: contrast(90%) sepia(20%);
+  filter: contrast(90%) sepia(20%);
+}
   
 }
-
+#blog-img::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  background: -webkit-radial-gradient(50% 50%, circle closest-corner, rgba(208, 186, 142, 1) 20, rgba(29, 2, 16, 0.2));
+  background: radial-gradient(50% 50%, circle closest-corner, rgba(208, 186, 142, 1) 20, rgba(29, 2, 16, 0.2));
+}
 #header-img{
 
 	width: 100%;
 	height: 350px;
   object-fit: cover;
   padding-top: 70px;
+ 
 }
 #header-overlay{
 	position: absolute;
@@ -146,11 +166,7 @@ nav .brand-logo{
 .card .card-content .card-title {
   font-weight: 700;
 }
-.card{
-  /* background-color: #222; */
-  /* background-image: url(../img/cl.png);
-  background-repeat: repeat; */
-}
+
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
   color:#ffd600;
   font-weight: 500;
@@ -178,6 +194,8 @@ nav .brand-logo{
   color: #fff;
   background-image: url(../img/tn.png);
   background-repeat: repeat;
+  transition: 2s ease;
+  -webkit-transition:2s ease;
 }
 
 .box::before, .box::after {
@@ -256,8 +274,10 @@ nav .brand-logo{
 
 sub {
  
-  color: #777
+  color: #777;
   text-transform: uppercase;
+  padding-top: 8px;
+  float: right;
 }
 .ftr {
   padding: 5px;
@@ -267,6 +287,7 @@ sub {
   text-transform: uppercase;
   border-bottom: .3px solid #777;
   padding-bottom: 5px;
+  padding-top: 5px;
 }
 .page-footer h5{
   font-weight: 600;
