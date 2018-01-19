@@ -2,25 +2,7 @@
 include_once('../includes/header.php');
 
 include '../includes/speedblog.php';
-// $r = $_SESSION['ryanid'];
 
-
-// isset($_GET["cat"]) ? $r = $_GET["cat"] : null;
-
-
-// $result = mysqli_query($conn, $query);
-
-// if(isset($_GET['cat']))
-
-// {
-//   $r = $_GET["cat"];
-//   $query = "SELECT * FROM blog_articles WHERE blog_category = '$r' ";
-//   // var_dump($query);
-//   // exit();
-// }
-// else{
-//   $select_results =  "SELECT * FROM blog_articles ORDER BY blogid DESC limit $offset, $page_result";
-// }
 
 ?>
 <div class="header-text-img">
@@ -44,7 +26,7 @@ include '../includes/speedblog.php';
            <div class="card ">
              <div class="card-image">
                <img src="../<?php echo $image[$i]; ?>"  onerror="this.src='../img/1.jpg'" width="100%" height="100%">
-              
+
 
 
              </div>
@@ -52,10 +34,10 @@ include '../includes/speedblog.php';
              <span class="card-title"><?php echo $title[$i]; ?></span>
                <p>by  <?  echo $author[$i]; ?></p>
                <p><?  custom_echo($body[$i], ""); ?></p>
-              
+
              </div>
              <div class="card-action white ">
-               <a href="blog.php?blogid=<?php echo $blogid[$i]; ?>">Lees verder &#8250; </a>  
+               <a href="blog.php?blogid=<?php echo $blogid[$i]; ?>">Lees verder &#8250; </a>
                <sub><?php echo $category[$i]; ?></sub>
 
              </div>
@@ -72,68 +54,28 @@ include '../includes/speedblog.php';
        <ul class="pagination" id="pagination">
 
 
-          <?php
+      <?php
+            $page_number = isset($_GET['pagenr']) ? $_GET['pagenr'] : 1;
+            $category_name = isset($_GET['cat']) ? $_GET['cat'] : "";
+            //echo $page_number;
 
-
-          // if($_GET['dog'] > 1)
-          // {
-          // echo "<li><a href = 'bloggies.php?catnr=".($_GET['dog'] - 1)." '> &#171; </a></li>";
-          // }
-          // for($l = 1 ; $l <= ceil($num); $l++)
-          // {
-          // echo "<li><a href = 'bloggies.php?catnr=$l '>". $l ."</a></li>";
-          // }
-          // if($_GET['dog'] = 1)
-          // {
-          // echo "<li><a href = 'bloggies.php?catnr=".($_GET['dog'] + 1)." '> &#187; </a></li>";
-          // }
-
-
-          if($_GET['pagenr'] > 1)
-          {
-          echo "<li><a href = 'bloggies.php?pagenr=".($_GET['pagenr'] - 1)." '> &#171; </a></li>";
+            if($page_number > 1)
+            {
+            echo "<li><a href = 'bloggies.php?pagenr=".($page_number - 1)."&cat=$category_name'> &#171; </a></li>";
+            }
+            for($l = 1 ; $l <= ceil($num); $l++)
+            {
+             echo "<li><a href = 'bloggies.php?pagenr=$l&cat=$category_name'>". $l ."</a></li>";
+            }
+            if($page_number = 1)
+            {
+            echo "<li><a href = 'bloggies.php?pagenr=".($page_number + 1)."&cat=$category_name'> &#187; </a></li>";
           }
-          for($l = 1 ; $l <= ceil($num); $l++)
-          {
-           echo "<li><a href = 'bloggies.php?pagenr=$l '>". $l ."</a></li>";
-          }
-          if($_GET['pagenr'] = 1)
-          {
-          echo "<li><a href = 'bloggies.php?pagenr=".($_GET['pagenr'] + 1)." '> &#187; </a></li>";
-          }
-
-
-
-           ?>
-
-           <?php
-
-
-           if($_GET['catnr'] > 1)
-           {
-           echo "<li><a href = 'bloggies.php?cat=".($_GET['cat'])."&catnr=".($_GET['catnr'] - 1)." '> &#171; </a></li>";
-           }
-           for($l = 1 ; $l <= ceil($num); $l++)
-           {
-            echo "<li><a href = 'bloggies.php?cat=".($_GET['cat'])."&catnr=$l '>". $l ."</a></li>";
-           }
-           if($_GET['catnr'] = 1)
-           {
-           echo "<li><a href = 'bloggies.php?cat=".($_GET['cat'])."&catnr=".($_GET['catnr'] + 1)." '> &#187; </a></li>";
-           }
-
-
-
             ?>
-
 
          </ul>
         </div>
       </div>
-
-
-
-
    </div>
 </div>
 
