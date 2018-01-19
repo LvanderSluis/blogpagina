@@ -76,8 +76,15 @@ include '../includes/countblog.php';
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard
               </a>
 
-              <a href="posts.php" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Posts <span class="badge">Hoeveel?</span></a>
-              <a href="users.php" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge">Hoeveel?</span></a>
+              <a href="posts.php" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"> </span> Posts 
+              
+              <?php
+              for($i=1; $i == count($blogid); $i++){
+               ?>
+             <span class="badge"><?php echo $i; ?></span></a>
+              <?php
+                }
+              ?>
             </div>
 
 

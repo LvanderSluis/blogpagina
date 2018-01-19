@@ -15,7 +15,9 @@ body{
 }
 
 hr{
- border: .5px solid #ffd600;
+  border-style: solid;
+ border-width: .3px;
+ color:#ffd600;
 }
 
 
@@ -33,7 +35,8 @@ nav .brand-logo{
   padding-top: 150px;
 }
 .parallax-container h1{
-  font-weight: 800;
+  font-weight: 700;
+  text-transform: uppercase;
   color: #fff;
 }
 
