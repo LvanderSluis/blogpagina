@@ -9,18 +9,17 @@ $page_result = 6;
 if(isset($_GET['cat']))
 
 {
-  /////////////////////////////////////////
-  ///Fetching results based on category///
-  ///////////////////////////////////////
-
+  ////////////////////////////////////////////
+  /////Fetching all results and counting/////
+  //////////////////////////////////////////
   $r = $_GET["cat"];
-  $query = "SELECT * FROM blog_articles WHERE blog_category = '$r' LIMIT $offset, $page_result";
-  $result = mysqli_query($conn,$query);
+  $select_results_all =  "SELECT * FROM blog_articles WHERE blog_category = '$r'";
+  $result = mysqli_query($conn,$select_results_all);
   $rows = mysqli_num_rows($result);
   $pagecount = $rows;
   $num = $pagecount / $page_result;
 
-  if($_GET['catnr]'])
+  if(isset($_GET['catnr']))
   {
    $page_value = $_GET['catnr'];
    if($page_value > 1)
@@ -28,6 +27,18 @@ if(isset($_GET['cat']))
     $offset = ($page_value - 1) * $page_result;
    }
   }
+
+
+  /////////////////////////////////////////
+  ///Fetching results based on category///
+  ///////////////////////////////////////
+
+
+
+  $query = "SELECT * FROM blog_articles WHERE blog_category = '$r' LIMIT $offset, $page_result";
+  $result = mysqli_query($conn,$query);
+
+
 
   $blogid[]=array();
   $title[]=array();
