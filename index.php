@@ -24,7 +24,7 @@ include 'includes/speedblog.php';
 <body>
 	<div class="navbar-fixed">
 		<nav>
-			<div class="nav-wrapper grey darken-4"> <a href="#!" class="brand-logo">CEEMES ? CEEMES : ZEEMES ;</a>
+			<div class="nav-wrapper grey darken-4"> <a href="#!" class="brand-logo">Streaker</a>
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="pages/bloggies.php">Blogs</a>

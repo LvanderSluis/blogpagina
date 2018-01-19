@@ -29,7 +29,7 @@
         <h5 class="white-text">Categorieën</h5>
         <?php
 
-            $query = "SELECT DISTINCT blog_category FROM blog_articles WHERE blog_category <> '' ";
+            $query = "SELECT DISTINCT blog_category FROM blog_articles WHERE blog_category <> ''LIMIT 10 ";
             $result = mysqli_query($conn, $query);
 
 

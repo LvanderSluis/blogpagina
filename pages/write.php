@@ -103,7 +103,8 @@ include '../includes/sessions.php';
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Selecteer Categorie</label>
-                        <select class="form-control" name="category" id="exampleFormControlSelect1">
+                        <select class="form-control" name="category" id="exampleFormControlSelect1" value="Geen_Categorie">
+                          <option>Geen Categorie</option>
                           <option>Html</option>
                           <option>Css</option>
                           <option>Javascript</option>
