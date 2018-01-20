@@ -40,7 +40,7 @@ $page_result = 6;
   if(isset($category_name)) {
     $query = "SELECT * FROM blog_articles WHERE blog_category = '$category_name' LIMIT $offset, $page_result";
   } else {
-    $query = "SELECT * FROM blog_articles LIMIT $offset, $page_result";
+    $query = "SELECT * FROM blog_articles ORDER BY blogid DESC LIMIT $offset, $page_result";
   }
 
 
